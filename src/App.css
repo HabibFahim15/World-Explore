@@ -1,0 +1,192 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --bg-color:#202020;
+}
+
+html{
+  font-size: 62.5%;
+  font-family: 'urbanist', sans-serif;
+}
+
+body{
+  background-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  color: #fff;
+  
+}
+
+p,
+li,
+a,
+button{
+ font-size: 1.7rem;
+ letter-spacing: 0.1rem;
+ line-height: 1.6;
+ color:#fff;
+}
+
+
+li{
+  list-style:none;
+}
+
+a{
+  color: #000;
+   &:hover{
+    color:#2e86c1;
+   }
+}
+
+button{
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor:pointer;
+  padding: 0.6rem 2.4rem;
+  text-align: center;
+  border: none;
+  outline:none;
+  text-transform: unset;
+  transition: all 0.3s ease-in-out;
+  background: #202020;
+  color: #fff;
+  border-radius: 1.5rem;
+  /* Test */
+  border-width: 0.1rem;
+  border-style:solid;
+  -webkit-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+  margin-top:1.6rem;
+}
+
+/* Some Common */
+
+.container {
+  max-width: 140rem;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-two-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-three-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-four-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Layout */
+
+header {
+  height: 10rem;
+  box-shadow: rgba(33, 35, 38, 0.3) 0px 10px 10px -10px;
+  background: #202020;
+  width: 100%;
+}
+
+header .container {
+  height: 10rem;
+}
+
+.navbar-grid {
+  display: grid; 
+  grid-template-columns: 0.5fr 1fr;
+  align-items: center; 
+  height: 10rem;
+  padding: 0 3.2rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center; 
+  gap: 3.2rem;
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none; 
+  font-size: 1.6rem; 
+  padding: 0.5rem 1rem; 
+}
+
+nav ul li a.active-link {
+  font-weight: bold; 
+  border-bottom: 2px solid #fff; 
+}
+
+nav ul li a:hover {
+  color: #00aaff; 
+}
+
+
+.ham-menu {
+  display: none;
+}
+
+
+/* hero section */
+
+.hero-section .container {
+  padding: 3.2rem;
+  margin: 9rem auto;
+  gap: 6.4rem;
+}
+.paragraph{
+  margin: 3.2rem 0;
+}
+
+.heading-xl{
+  font-family: inherit;
+  font-size: clamp(5.2rem, 6vw, 4.241rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.hero-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .banner-image{
+  width: 100%;
+}
+
+@media screen and (max-width: 990px) {
+  
+  .hero-content{
+    order:1;
+  }
+  .container .banner-image{
+    width: 80%;
+    order:0;
+  }
+}
