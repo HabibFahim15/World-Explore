@@ -2,9 +2,9 @@
 const Contact = () => {
 
   const handleFormSubmit = (formData) => {
-    console.log(formData.entries());
+    // console.log(formData.entries());
     const formInputData = Object.fromEntries(formData.entries());
-    console.log(formInputData);
+    // console.log(formInputData);
   }
 
   return (
